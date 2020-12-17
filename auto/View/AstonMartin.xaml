@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="masterAutod.View.AstonMartin">
+    <ContentPage.Content>
+        <StackLayout Padding="15">
+            <Label VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black" FontSize="Large" Text="Модели машин марки AstonMartin" />
+            <Image x:Name="PhotosAstonMartin" Source="Mercedes-AMGGT4.jpeg" HeightRequest="250"/>
+            <Picker x:Name="modelAstonMartin" SelectedIndexChanged="modelAstonMartin_SelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>Aston Martin DB9 Volante</x:String>
+                    <x:String>Aston Martin DB11</x:String>
+                    <x:String>Aston Martin DBX</x:String>
+                </Picker.Items>
+            </Picker>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
